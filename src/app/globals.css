@@ -1,0 +1,6 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+
+:root { --brand: #6D28D9; --bg: #0B0B12; }
+html, body { background: var(--bg); color: #E5E7EB; }
+.card { @apply rounded-xl border border-white/10 bg-white/5 p-4 backdrop-blur; }
+.btn-primary { @apply rounded-lg bg-brand px-4 py-2 font-semibold text-white transition hover:bg-brand-light; }
