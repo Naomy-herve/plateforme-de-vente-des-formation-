@@ -38,7 +38,7 @@ export default function Checkout() {
             </fieldset>
             {/* PCI DSS L1 : Stripe Elements tokenise — jamais de données carte sur nos serveurs */}
             <button onClick={pay} className="btn-primary mt-4 w-full py-3 text-lg">⚡ Payer en 1 clic</button>
-            <p className="mt-2 text-center text-xs text-gray-500">3D Secure 2.0 · AES-256 · RGPD 2026 : droit à l'oubli automatisé</p>
+            <p className="mt-2 text-center text-xs text-gray-500">3D Secure 2.0 · AES-256 · RGPD 2026 : droit à l&apos;oubli automatisé</p>
           </div>
         </>
       )}
