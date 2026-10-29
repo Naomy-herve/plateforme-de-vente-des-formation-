@@ -17,7 +17,7 @@ export default function Home() {
       <section className="relative flex min-h-[70vh] flex-col items-center justify-center overflow-hidden text-center">
         <HeroWebGL />
         <div className="relative z-10 max-w-2xl p-6">
-          <h1 className="text-4xl font-extrabold md:text-6xl">Apprenez <span className="text-brand-light">augmenté par l'IA</span></h1>
+          <h1 className="text-4xl font-extrabold md:text-6xl">Apprenez <span className="text-brand-light">augmenté par l&apos;IA</span></h1>
           <p className="mt-4 text-gray-300">Formations adaptées à vos compétences manquantes, résumés vidéo Whisper, tuteur IA 24/7.</p>
           <div className="mt-8 flex justify-center gap-4">
             <Link href="/register" className="btn-primary text-lg">Commencez votre essai gratuit</Link>

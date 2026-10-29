@@ -29,7 +29,7 @@ export default function Dashboard() {
           <h2 className="mb-3 font-bold">📅 Calendrier</h2>
           <ul className="space-y-1 text-sm">
             <li>🔸 Jeudi 18h — Session live « RAG avancé »</li>
-            <li>🔸 Samedi 10h — Groupe d'étude Python</li>
+            <li>🔸 Samedi 10h — Groupe d&apos;étude Python</li>
           </ul>
           <button className="mt-3 text-sm text-brand-light hover:underline"
             onClick={() => alert('Sync Google Calendar : connectez l’OAuth Google puis appelez events.insert().')}>🔗 Synchroniser Google Calendar</button>
