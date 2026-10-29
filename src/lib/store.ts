@@ -35,6 +35,7 @@ export const useAppStore = create<AppState>()(
       addNote: (n) => set((s) => ({ notes: [...s.notes, n] })),
       addSkill: (sk) => set((s) => ({ skills: s.skills.includes(sk) ? s.skills : [...s.skills, sk] })),
     }),
-    { name: 'elearn-ai-store' }
+    // Rehydrated on mount by <StoreHydrator /> so the first client render matches the server HTML.
+    { name: 'elearn-ai-store', skipHydration: true }
   )
 );

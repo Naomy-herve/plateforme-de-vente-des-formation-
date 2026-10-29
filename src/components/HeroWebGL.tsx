@@ -11,8 +11,9 @@ void main(){ vec2 uv = gl_FragCoord.xy / r;
 export default function HeroWebGL() {
   const ref = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
-    const cv = ref.current!;
-    const gl = cv.getContext('webgl')!;
+    const cv = ref.current;
+    const gl = cv?.getContext('webgl');
+    if (!cv || !gl) return;
     const compile = (type: number, src: string) => {
       const s = gl.createShader(type)!; gl.shaderSource(s, src); gl.compileShader(s); return s;
     };
